@@ -1,0 +1,470 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.topnav {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #e3e4e5;
+}
+
+.topnavcenter {
+  width: 1190px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #999999;
+}
+.topnavcenter span {
+  padding: 0 8px;
+  border-right: 1px solid #999999;
+  line-height: 30px;
+}
+.topnavcenter a {
+  color: inherit;
+  text-decoration: none;
+}
+.topnavcenter a:hover {
+  color: #e33333;
+}
+.topnavcenter .topnavleft {
+  float: left;
+}
+.topnavcenter .topnavleft span:nth-child(1) {
+  position: relative;
+  height: 30px;
+  display: inline-block;
+  z-index: 2;
+}
+.topnavcenter .topnavleft span:nth-child(1) ul {
+  position: absolute;
+  padding: 14px 8px 10px 15px;
+  background-color: white;
+  display: none;
+  left: -7px;
+  top: 30px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+.topnavcenter .topnavleft span:nth-child(1) ul div > li {
+  width: 50%;
+}
+.topnavcenter .topnavleft span:nth-child(1) ul li {
+  float: left;
+  width: 20%;
+}
+.topnavcenter .topnavleft span:nth-child(1) ul li a:hover {
+  padding: 6px;
+  background-color: #f4f4f4;
+}
+.topnavcenter .topnavleft span:nth-child(1):hover ul {
+  display: block;
+}
+.topnavcenter .topnavright {
+  float: right;
+}
+.topnavcenter .topnavright span:nth-child(1) span:nth-child(2) {
+  color: #e33333;
+}
+.topnavcenter .topnavright span:nth-child(3) {
+  position: relative;
+  height: 30px;
+  display: inline-block;
+}
+.topnavcenter .topnavright span:nth-child(3) .myjd {
+  background-color: white;
+  top: 30px;
+  position: absolute;
+  display: none;
+  width: 240px;
+  border: #999999 1px solid;
+  padding: 8px 0 10px 8px;
+  z-index: 2;
+}
+.topnavcenter .topnavright span:nth-child(3) .myjd .myjd1 {
+  overflow: hidden;
+}
+.topnavcenter .topnavright span:nth-child(3) .myjd .myjd1 li {
+  float: left;
+  width: 33.3%;
+}
+.topnavcenter .topnavright span:nth-child(3) .myjd .myjd2 {
+  border-top: 1px solid #f1f1f1;
+  overflow: hidden;
+}
+.topnavcenter .topnavright span:nth-child(3) .myjd .myjd2 li {
+  float: left;
+  width: 33.3%;
+}
+.topnavcenter .topnavright span:nth-child(3) .myjd .myjd3 {
+  border-top: 1px solid #f1f1f1;
+  overflow: hidden;
+}
+.topnavcenter .topnavright span:nth-child(3) .myjd .myjd3 li {
+  float: left;
+  width: 33%;
+}
+.topnavcenter .topnavright span:nth-child(3):hover .myjd {
+  display: block;
+}
+.topnavcenter .topnavright span:nth-child(4) {
+  color: #e33333;
+  display: inline-block;
+  position: relative;
+}
+.topnavcenter .topnavright span:nth-child(4) .qycg {
+  background-color: white;
+  width: 150px;
+  right: -80px;
+  color: #999999;
+  position: absolute;
+  display: none;
+  border: #999999 1px solid;
+  padding: 8px 0 10px 8px;
+  z-index: 2;
+}
+.topnavcenter .topnavright span:nth-child(4) .qycg div li {
+  width: 100%;
+}
+.topnavcenter .topnavright span:nth-child(4) .qycg li {
+  float: left;
+  margin-right: 20px;
+  height: 24px;
+}
+.topnavcenter .topnavright span:nth-child(4) .qycg li a {
+  margin: 0;
+  white-space: nowrap;
+}
+.topnavcenter .topnavright span:nth-child(4):hover .qycg {
+  display: block;
+}
+.topnavcenter .topnavright span:nth-child(5) {
+  display: inline-block;
+  position: relative;
+}
+.topnavcenter .topnavright span:nth-child(5) .sjfw {
+  background-color: white;
+  color: #999999;
+  position: absolute;
+  display: none;
+  border: #999999 1px solid;
+  padding: 8px 0 10px 8px;
+  width: 170px;
+  right: 0;
+  z-index: 2;
+}
+.topnavcenter .topnavright span:nth-child(5) .sjfw li {
+  width: 50%;
+  float: left;
+  height: 24px;
+}
+.topnavcenter .topnavright span:nth-child(5) .sjfw li a {
+  margin: 0;
+  white-space: nowrap;
+}
+.topnavcenter .topnavright span:nth-child(5):hover .sjfw {
+  display: block;
+}
+.topnavcenter .topnavright span:last-child {
+  border: hidden;
+}
+
+.header {
+  background: #fff;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.header .headercenter {
+  height: 140px;
+  width: 1190px;
+  margin: 0 auto;
+}
+.header .headercenter .headerjdimg {
+  float: left;
+}
+.header .headercenter .headerjdimg img {
+  margin-top: 14px;
+  height: 120px;
+  width: 190px;
+}
+.header .headercenter .headerinput {
+  float: left;
+}
+.header .headercenter .headerinput .headerinputtop {
+  overflow: hidden;
+  margin-top: 30px;
+  padding-left: 90px;
+}
+.header .headercenter .headerinput .headerinputtop .headerintopinput {
+  float: left;
+}
+.header .headercenter .headerinput .headerinputtop .headerintopinput input {
+  float: left;
+  color: #999999;
+  width: 490px;
+  height: 30px;
+  border: 2px solid #e33333;
+}
+.header .headercenter .headerinput .headerinputtop .headerintopinput button {
+  float: left;
+  background-color: #e33333;
+  border: transparent;
+  width: 60px;
+  height: 35.2px;
+}
+.header .headercenter .headerinput .headerinputtop .headerintopinput button svg {
+  font-size: 20px;
+}
+.header .headercenter .headerinput .headerinputtop .headerintopgwc {
+  position: relative;
+  float: left;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border: 1px solid #e3e4e5;
+  color: #e33333;
+  font-size: 12px;
+  z-index: 0;
+}
+.header .headercenter .headerinput .headerinputtop .headerintopgwc svg {
+  margin-right: 18px;
+  font-size: 18px;
+}
+.header .headercenter .headerinput .headerinputtop .headerintopgwc .gwcnum {
+  position: absolute;
+  top: 0;
+  left: 32px;
+  color: white;
+  background-color: #e33333;
+  border-radius: 45%;
+  padding: 0 6px;
+}
+.header .headercenter .headerinput .headerkey {
+  margin-top: 4px;
+  padding-left: 90px;
+  overflow: hidden;
+}
+.header .headercenter .headerinput .headerkey li {
+  float: left;
+  color: #999999;
+  font-size: 12px;
+  margin-left: 6px;
+}
+.header .headercenter .headerinput .headerbutton {
+  margin-top: 30px;
+}
+.header .headercenter .headerinput .headerbutton li {
+  float: left;
+  margin-left: 22px;
+}
+.header .headercenter .headercode {
+  float: right;
+}
+.header .headercenter .headercode img {
+  margin: 20px 80px 0 0;
+  width: 66px;
+  height: 66px;
+}
+
+.main {
+  width: 1200px;
+  margin: 0 auto;
+  height: 480px;
+}
+.main .mainleft {
+  background-color: #fefefe;
+  padding: 10px;
+  float: left;
+  margin-top: 12px;
+  font-family: fangsong;
+}
+.main .mainleft li {
+  line-height: 25px;
+}
+.main .mainleft a:hover {
+  color: #c81623;
+}
+.main .mainimg .swiper {
+  margin: 12px 0 0 10px;
+  height: 470px;
+  width: 590px;
+  float: left;
+  --swiper-navigation-size: 10px;
+  --swiper-navigation-color: #ffffff;
+}
+.main .mainimg .swiper .swiper-button-next {
+  right: 0;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+.main .mainimg .swiper .swiper-button-prev {
+  left: 0;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.main .mainimg .swiper .swiper-button-next,
+.main .mainimg .swiper .swiper-button-prev {
+  background-color: #d9d9d9;
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 30px;
+  height: 35px;
+  line-height: 35px;
+}
+.main .mainimg .mainimg3 {
+  float: left;
+  margin: 12px 0 0 10px;
+}
+.main .mainimg .mainimg3 li {
+  margin-top: 4px;
+}
+.main .mainimg .mainimg3 li img {
+  width: 190px;
+  height: 150px;
+  cursor: pointer;
+}
+.main .mainright {
+  background-color: #fefefe;
+  float: left;
+  margin-left: 12px;
+  margin-top: 12px;
+  width: 184px;
+}
+.main .mainright .mainrigtop .jdtxtop .jdtx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .mainright .mainrigtop .jdtxtop .jdtx img {
+  height: 40px;
+  margin-top: 8px;
+}
+.main .mainright .mainrigtop .jdtxtop p {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 4px;
+  color: #666;
+}
+.main .mainright .mainrigtop .plusvip {
+  background: -webkit-gradient(linear, left top, right top, from(#FFF4D2), to(#FFECB6));
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 8px;
+}
+.main .mainright .mainrigtop .plusvip .plusvip1 {
+  float: left;
+}
+.main .mainright .mainrigtop .plusvip .plusvip1 h5 {
+  color: #663300;
+}
+.main .mainright .mainrigtop .plusvip .plusvip1 p {
+  font-size: 12px;
+  color: #A88100;
+}
+.main .mainright .mainrigtop .plusvip .plusvip2 {
+  float: right;
+  font-size: 12px;
+}
+.main .mainright .mainrigtop .comvip {
+  background: #E0E8FB;
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 8px;
+}
+.main .mainright .mainrigtop .comvip .comvip1 {
+  float: left;
+  width: 88px;
+}
+.main .mainright .mainrigtop .comvip .comvip1 h5 {
+  color: #3161E2;
+}
+.main .mainright .mainrigtop .comvip .comvip1 p {
+  font-size: 12px;
+  color: rgba(49, 97, 226, 0.7);
+  white-space: nowrap;
+}
+.main .mainright .mainrigtop .comvip .comvip2 {
+  float: right;
+  font-size: 12px;
+  color: #3161E2;
+}
+.main .mainright .service ul li {
+  float: left;
+  width: 33.3%;
+  margin-top: 20px;
+}
+.main .mainright .service ul li a {
+  margin: 0 auto;
+  width: 28px;
+  display: block;
+  position: relative;
+}
+.main .mainright .service ul li a:hover {
+  color: #c81623;
+}
+.main .mainright .service ul li a span {
+  font-size: 12px;
+  position: absolute;
+  width: 63px;
+  text-align: center;
+  top: 30px;
+  left: -18px;
+}
+.main .mainright .service ul li a img {
+  width: 28px;
+  height: 28px;
+}
+.main .mainright .service ul li a img.service_ico_img_hover {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .mainright .service ul li a:hover .service_ico_img_hover {
+  visibility: visible;
+  opacity: 1;
+}
+.main .mainright .mainzx a {
+  font-size: 12px;
+  width: 178px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #666;
+  display: inline-block;
+}
+.main .mainright .mainzx a span {
+  display: inline-block;
+  color: #e1251b;
+  background-color: rgba(225, 37, 27, 0.08);
+  margin: 33px 6px 10px 16px;
+}/*# sourceMappingURL=jingdong.css.map */
